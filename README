@@ -1,0 +1,130 @@
+==========================
+         Keryx
+==========================
+      Version 0.92
+
+==========================
+     Contact/Support:
+==========================
+
+	Website: http://keryxproject.org
+	Email: Chris Oliver <excid3@gmail.com>
+    Launchpad Project: http://launchpad.net/keryx
+
+==========================
+         License:
+==========================
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+==========================
+       Requirements
+==========================
+
+Windows: None
+
+Linux: Python, wxPython
+
+Ubuntu users need the following packages in order to have wxPython successfully
+installed:
+
+libwxbase2.8-0
+libwxgtk2.8-0
+python-wxversion
+python-wxgtk2.8
+
+wxPython is only required for using Keryx's interface. Project creation can be
+done via command line parameters. See USAGE for more information.
+
+==========================
+Installation Instructions:
+==========================
+
+Extract the Keryx archive anywhere (typically a usb device).
+
+==========================
+          Usage:
+==========================
+Keryx is based around the concept of 'projects'. Each project keeps track of the
+software versions that are installed on that computer. To get started you must
+first create a project on that computer.
+
+If you are unable to install wxPython but have Python installed you can still
+create projects. In a console run:
+
+'python keryx.py --create <project name> <plugin name>'
+
+and Keryx will create a new project in the project directory. This is helpful
+for Ubuntu server users along with users who have not installed wxPython yet.
+The only <plugin name> currently available is debian.
+
+Once you have created this project, make sure you have a copy on your usb device
+that will be used to run Keryx from on a computer with highspeed internet.
+
+Keryx can be run on ANY computer with Python and wxPython installed, meaning
+Windows, Mac and Linux computers. Running Keryx on any Windows computer is
+nothing more than running 'keryx.exe'. If you are running Keryx using Python, cd
+to the directory and run 'python keryx.py' to start. Some environments support
+running a python application by double clicking it as well.
+
+After you have Keryx running on an internet connected host, downloading packages
+is as simple as opening your project and selecting the packages to download.
+Keryx will automatically select the package dependencies for you making sure
+that nothing is left behind. Any packages you download are saved to your
+project's folder in the 'packages' directory.
+
+When you are finished you can return to your project computer and install the
+packages through the usual way.
+
+==========================
+Uninstallation/Upgrading:
+==========================
+
+Extract the newest version over top, replacing all files.
+
+==========================
+         Thanks:
+==========================
+
+Buran Ayuthia
+John Gleissner
+mac9416
+jacseen
+Kevin Buente
+Douglass Clem
+Cory Thompson
+Mark James - Silk Icon Set - http://www.famfamfam.com/lab/icons/silk/
+Tiziano Tissino - ProportionalSplitter
+Ingelrest François - Plugin framework base
+heylove - Logo is based off areao.42-Icons
+Anyone else I forgot to mention
+
+==========================
+     Additional Notes:
+==========================
+
+Command line parameters:
+
+-h or --help                            Displays this message
+-v or --version                         Displays Keryx version number
+--create <project name> <plugin name>   Creates a new project in the default
+                                          directory with name of <project name>
+                                          and type project <plugin name>
+--config <file>                         Uses <file> to as configuration file
+
+Due to py2exe's nature, information printed to the console is NOT displayed.
+While the command line parameters will still work properly, no indication of
+success will be shown in the console. The information will still be written in
+the log files for further review.

@@ -1,0 +1,24 @@
+==========================
+        Installing:
+==========================
+
+Windows: No installation required. Just run keryx.exe from the win32 directory
+
+Linux: No install required as long as Python and wxPython are installed.
+       Just run 'python keryx.py' or './keryx.py' if it is set as executable.
+
+==========================
+        Building:
+==========================
+
+py2exe is required to build a proper windows executable.
+
+WARNING: Issues with Python 2.6 prevent succesful builds.
+
+Run 'python setup.py py2exe' to build a win32 binary. This has been tested using
+the following:
+
+Python 2.5.4
+wxPython 2.8.9.1 unicode
+Py2exe 0.6.9
+Pywin32

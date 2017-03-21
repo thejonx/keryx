@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+    <head>
+        <title>Keryx Tutorial</title>  
+        <style type="text/css">
+            body {
+                font-size: 90%;
+            }
+            h1, h2, h3, h4, h5 {
+                color: white;
+                background-color: #262729;
+                padding: 0.5em;
+            }
+            a {
+                color: #0197fd;
+            }
+            a.simple {
+                color: white;
+            }
+            img {
+                border: solid 2px #262729;
+                margin: 10px;
+                padding: 10px;
+            }
+            p {
+                border-left: solid 2px #262729;
+                margin-left: 10px;
+                padding-left: 10px;
+            }
+            .indent {
+                margin-left: 20px;
+            }
+        </style>
+
+        <link type="stylesheet/css" url="Tutorial.css" />
+    </head>
+    <body>
+    <h1>Keryx Tutorial</h1>
+
+        <div class="indent">
+            <ul>
+                <li><a href="#getting_keryx">Getting Keryx</a></li>
+                <li><a href="#starting_keryx">Starting Keryx</a>
+                    <ul>
+                        <li><a href="#on_linux">On Linux</a></li>
+                        <li><a href="#on_windows">On Windows</a></li>
+                    </ul>
+                </li>
+                <li><a href="#creating_a_project">Creating a Project</a></li>
+                <li><a href="#opening_a_project">Opening a Project</a></li>
+                <li><a href="#installing_packages">Installing Packages</a></li>
+                <li><a href="#and_if_something_goes_wrong">And if something goes wrong?</a></li>
+                <li><a href="#what_if_everything_goes_right">What if everything goes right?</a></li>                
+            </ul>
+        </div>
+
+        <div class="indent">
+            <h2><a class="simple" name="getting_keryx">Getting Keryx</a></h2>
+            <p>Grab Keryx from the <a href="http://keryxproject.org">Download page</a> and extract it to your flash drive.</p>
+
+            <h2><a class="simple" name="starting_keryx">Starting Keryx</a></h2>
+            <div class="indent">
+                <h3><a class="simple" name="on_linux">On Linux</a></h3>
+                <p>Navigate to the keryx/linux directory on your flash drive and double-click the 'keryx' icon.</p>
+                <h3><a class="simple" name="on_windows">On Windows</a></h3>
+                <p>Navigate to the keryx/win32 directory on your flash drive and double-click the 'keryx' or 'keryx.exe' icon. </p>
+            </div>
+
+            <h2><a class="simple" name="creating_a_project">Creating a Project (Offline Computer)</a></h2>
+            <p>After starting Keryx, enter the name of your project (or leave the default) and click 'New Project'.<br />
+            <a href="Tutorial_Files/Create_Project.png"><img src="Tutorial_Files/Create_Project.png" width="300" /></a><br />
+            When asked whether you would like to download the latest package lists, choose 'No', then exit Keryx.</p>
+
+            <h2><a class="simple" name="opening_a_project">Opening a Project (Online Computer)</a></h2>
+            <p>Start Keryx and choose your project from the bottom drop-down menu. Then click 'Open Project'.<br />
+            <a href="Tutorial_Files/Open_Project.png"><img src="Tutorial_Files/Open_Project.png" width="300" /></a><br />
+            If you would like to have the latest packages available for download, choose 'Yes' when prompted whether to download latest package lists (recommended).</p>
+
+            <h2><a class="simple" name="installing_packages">Installing Packages (Offline Computer)</a></h2>
+            <p>Open your project and select 'Install Packages' from the 'Project' menu. Check all the packages you want to install and click 'Continue'.<br />
+            <a href="Tutorial_Files/Install_Packages.png"><img src="Tutorial_Files/Install_Packages.png" width="300" /></a><br />
+            A terminal will display the progress of package installation. After installation is complete, press ENTER.<br />
+            <a href="Tutorial_Files/Installing_Packages.png"><img src="Tutorial_Files/Installing_Packages.png" width="300" /></a><br />
+            So that Keryx will know that you have installed new packages, you should now update the project status (Project > Update Status).</p>
+
+            <hr />
+
+            <h2><a class="simple" name="and_if_something_goes_wrong">And if something goes wrong?</a></h2>
+            <p>There are several ways to get help with a problem. You can</p>
+            <ul>
+                <li><a href="https://bugs.launchpad.net/keryx/+filebug">report a bug on Launchpad</a></li>
+                <li>ask on the <a href="http://keryxproject.org/forums">Forums</a> or <a href="https://answers.launchpad.net/keryx/+addquestion">on Launchpad</a></li>
+                <li><a href="http://keryxproject.org/contact-us/">contact our mailing list</a></li>
+                <li><a href="http://webchat.freenode.net/?channels=keryx">chat with us in #keryx on Freenode</a>.</li>
+            </ul>
+
+            <h2><a class="simple" name="what_if_everything_goes_right">What if everything goes right?</a></h2>
+            <p>Please consider <a href="http://keryxproject.org/donate/">donating to the project</a>!</p>
+        </div>
+    </body>
+</html>

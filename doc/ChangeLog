@@ -1,0 +1,87 @@
+Keryx 0.92.4 (15 March 2010)
+-------------
+Improvements:
+  * Added examples to keryx.conf
+  * Made proxy options GUI more user-friendly
+  * Added Update Status button to GUI
+  * Added Install Packages tool
+
+Bugfixes:
+  * Fixed bug that prevented project creation on some machines (#510637)
+  * Now warns when a compatible version of wxPython is not available (#503056)
+  * No longer requires a primary sources.list to open a project (#522436)
+
+Known Bugs:
+  * On some Linux systems, parts of the interface do not display correctly (#522529)
+
+Keryx 0.92 (20 February 2009)
+-------------
+Improvements:
+  * Added configuration file support
+  * Added Sources editor
+  * Added folder options
+  * Added quick open to start dialog
+  * Added proxy support
+  * Added a color map index
+  * Added translation support
+  * Added options
+  * Added automatic update checking
+ 
+Bugfixes:
+  * Fixed improper debian package version comparing
+  * Checks Windows disk free space
+  
+Known Bugs:
+  * Some dependencies are not packages, but other packages Provide the dependency
+
+Keryx 0.91 (31 December 2008)
+-------------
+Improvements:
+  * wxWidgets interface
+  * Speed improvements
+  * Threading for a more responsive interface
+  * Searching
+  * Windows binary    
+  * New logo
+  
+Known Bugs:
+  * Windows binary cannot display text printed to console  
+
+Keryx 0.12 (26 August 2008)
+-------------
+Added:
+  * Download.py:
+    - Allows overwriting of files if they already exist
+    - If exists and not overwriting, notifies user that file already exists
+  * Ubuntu.py:
+    - Overwrites package lists if 'internet' is selected
+
+Bugfixes:
+  * Fixed #259924 in Ubuntu.py
+  * Internet package lists are downloaded correctly
+
+Keryx 0.11.1 (19 August 2008)
+-------------
+Bugfixes:
+  * Fixed bug #258912 in Ubuntu.py
+  * Packages duplicates are removed
+  * Fixed an issue with repositories with only one section
+
+Keryx 0.11 (10 August 2008)
+-------------
+Added:
+  * Ubuntu: 
+    - Calculates package dependencies and downloads them
+    - Caches package lists to project folder
+    - Looks in pkglists folder for Local Files
+    - Checks to see if package is already downloaded
+    - Installed packages are displayed if package list is empty on project refresh
+Bugfixes:
+  * Small bugfixes
+  * Ubuntu: 
+    - Status file moved to pkglists folder
+    - Correctly parses deb entries with multiple sections
+  
+Keryx 0.10 (31 July 2008)
+-------------------------
+  * Initial Public Release
